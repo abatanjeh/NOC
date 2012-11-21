@@ -1,0 +1,213 @@
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1> In monitoring room </h1>
+
+
+
+<script type="text/javascript">
+
+var now = new Date();
+var hour = now.getHours();
+var day = now.getDay();
+
+
+
+     if (day == 0 && hour < 8 ) { 
+    document.write("<h3>Hayyan Mosallam + Mohammad Shukri </h3>"); 
+}
+
+else if (day == 0 && hour > 7 && hour < 16 ) { 
+    document.write("<h3>Mu'een Dado' + Ali Batanjeh + Haytham Sadeq </h3>"); 
+}
+
+else if (day == 0 && hour > 15 ) { 
+    document.write("<h3>Bader Kayed + Mohammad Haj Ali + Ahmad Odeh </h3>"); 
+}
+
+else if (day == 1 && hour < 8 ) { 
+    document.write("<h3>Bader Kayed + Mohammad Haj Ali </h3>"); 
+}
+
+else if (day == 1 && hour > 7 && hour < 16 ) { 
+    document.write("<h3>Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar </h3>"); 
+}
+
+else if (day == 1 && hour > 15 ) { 
+    document.write("<h3>Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq </h3>"); 
+}
+
+else if (day == 2 && hour < 8 ) { 
+    document.write("<h3>Mohammad Ghanem + Haytham Sadeq</h3>"); 
+}
+
+else if (day == 2 && hour > 7 && hour < 16 ) { 
+    document.write("<h3>Mu'een Dado' + Bader Kayed + Mohammad Al Asmar</h3>"); 
+}
+
+else if (day == 2 && hour > 15 ) { 
+    document.write("<h3>Ali Batanjeh + Hayyan Mosallam</h3>"); 
+}
+
+else if (day == 3 && hour < 8 ) { 
+    document.write("<h3>Ali Batanjeh + Hayyan Mosallam</h3>"); 
+}
+
+else if (day == 3 && hour > 7 && hour < 16 ) { 
+    document.write("<h3>Mohammad Al Asmar + Haytham Sadeq + Mohammad Shukri</h3>"); 
+}
+
+else if (day == 3 && hour > 15 ) { 
+    document.write("<h3>Mu'een Dado' + Bader Kayed </h3>"); 
+}
+
+else if (day == 4 && hour < 8 ) { 
+    document.write("<h3>Mu'een Dado' + Bader Kayed </h3>"); 
+}
+
+else if (day == 4 && hour > 7 && hour < 16 ) { 
+    document.write("<h3>Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali </h3>");
+}
+
+else if (day == 4 && hour > 15 ) { 
+    document.write("<h3>Mohammad Ghanem + Mohammad Al Asmar </h3>"); 
+}
+
+else if (day == 5 && hour < 8 ) { 
+    document.write("<h3>Mohammad Ghanem + Mohammad Al Asmar</h3>");
+}
+
+else if (day == 5 && hour > 7 && hour < 16 ) { 
+    document.write("<h3>Ahmad Odeh + Mohammad Shukri </h3>");
+}
+
+else if (day == 5 && hour > 15 ) { 
+    document.write("<h3>Ali Batanjeh + Mohammad Haj Ali</h3>"); 
+}
+
+else if (day == 6 && hour < 8 ) { 
+    document.write("<h3>Ali Batanjeh + Mohammad Haj Ali</h3>");
+}
+
+else if (day == 6 && hour > 7 && hour < 16) { 
+    document.write("<h3>Ahmad Odeh + Haytham Sadeq </h3>");
+}
+
+else if (day == 6 && hour > 15 ) { 
+    document.write("<h3>Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri </h3>");
+}
+</script>
+
+<hr>
+
+<script type="text/javascript">
+var now = new Date();
+var hours = now.getHours();
+
+
+document.bgColor="#CC9900";
+
+//17 night
+if (hours > 16 && hours < 18){
+document.write ('<body style="background-color: #F1BF96">');
+}
+//18 night
+else if (hours > 17 && hours < 19){
+document.write ('<body style="background-color: #C9AB93">');
+}
+//19-4 night
+else if (hours > 18 || hours < 5){
+document.write ('<body style="background-color: #C0C0C0;">');
+}
+//9-16 day
+else if (hours > 8 && hours < 17){
+document.write ('<body style="background-color: #D6DEE4">');
+}
+//6-8 day
+else if (hours > 5 && hours < 9){
+document.write ('<body style="background-color: skyblue">');}
+//4-5 day
+else if (hours > 3 && hours < 6){
+document.write ('<body style="background-color: steelblue">');
+}
+else {
+document.write ('<body style="background-color: white">');
+}
+</script>			
+
+
+<html>
+<head>
+<title>NOC Schedule
+</title>
+<style type="text/css">
+  body  
+{font-family: Arial,
+          Times, serif;
+    color: black;
+	    background-color: #ddffdd 
+left:30px;}
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  
+</style>
+
+<script type="text/javascript">
+var day=new Date().getDay();
+switch (day)
+{
+case 0:
+  x="<h1>Shifts in this day (Sunday) </h1><h3>[00-08] Hayyan Mosallam + Mohammad Shukri <br>[08-16] Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24] Bader Kayed + Mohammad Haj Ali + Ahmad Odeh</h3>";
+  break;
+case 1:
+  x="<h1>Shifts in this day (Monday) </h1><h3>[00-08] Bader Kayed + Mohammad Haj Ali <br>[08-16] Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24] Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq</h3>";
+  break;
+case 2:
+  x="<h1>Shifts in this day (Tuesday) </h1><h3>[00-08] Mohammad Ghanem + Haytham Sadeq <br>[08-16] Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24] Ali Batanjeh + Hayyan Mosallam</h3>";
+  break;
+case 3:
+  x="<h1>Shifts in this day (Wednesday) </h1><h3>[00-08] Ali Batanjeh + Hayyan Mosallam <br>[08-16] Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24] Mu'een Dado' + Bader Kayed</h3>";
+  break;
+case 4:
+  x="<h1>Shifts in this day (Thursday) </h1><h3>[00-08] Mu'een Dado' + Bader Kayed <br>[08-16] Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24] Mohammad Ghanem + Mohammad Al Asmar</h3>";
+  break;
+case 5:
+  x="<h1>Shifts in this day (Friday) </h1><h3>[00-08] Mohammad Ghanem + Mohammad Al Asmar <br>[08-16] Ahmad Odeh + Mohammad Shukri <br>[16-24] Ali Batanjeh + Mohammad Haj Ali</h3>";
+  break;
+case 6:
+  x="<h1>Shifts in this day (Saturday) </h1><h3>[00-08] Ali Batanjeh + Mohammad Haj Ali <br>[08-16] Ahmad Odeh + Haytham Sadeq <br>[16-24] Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri</h3>";
+  break;
+}
+document.write(x);
+</script>
+
+</script>
+
+<hr>
+<h1> Weekly schedule </h1>
+<b>Saturday </b><br>[00-08] Ali Batanjeh + Mohammad Haj Ali<br>[08-16] Ahmad Odeh + Haytham Sadeq <br>[16-24] Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri
+<br><br>
+<b>Sunday </b><br>[00-08] Hayyan Mosallam + Mohammad Shukri <br>[08-16] Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24] Bader Kayed + Mohammad Haj Ali + Ahmad Odeh
+<br><br>
+<b>Monday </b><br>[00-08] Bader Kayed + Mohammad Haj Ali <br>[08-16] Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24] Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq
+<br><br>
+<b>Tuesday </b><br>[00-08] Mohammad Ghanem + Haytham Sadeq <br>[08-16] Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24] Ali Batanjeh + Hayyan Mosallam
+<br><br>
+<b>Wednesday </b><br>[00-08] Ali Batanjeh + Hayyan Mosallam <br>[08-16] Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24] Mu'een Dado' + Bader Kayed
+<br><br>
+<b>Thursday </b><br>[00-08] Mu'een Dado' + Bader Kayed <br>[08-16] Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24] Mohammad Ghanem + Mohammad Al Asmar
+<br><br>
+<b>Friday </b><br>[00-08] Mohammad Ghanem + Mohammad Al Asmar <br>[08-16] Ahmad Odeh + Mohammad Shukri <br>[16-24] Ali Batanjeh + Mohammad Haj Ali
+</body>
+</html>
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->
+
+<!-- Hosting24 Analytics Code -->
+<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
+<!-- End Of Analytics Code -->

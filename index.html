@@ -110,28 +110,17 @@ var hours = now.getHours();
 
 document.bgColor="#CC9900";
 
-//17 night
-if (hours > 16 && hours < 18){
-document.write ('<body style="background-color: #F1BF96">');
+
+if (hours > 7 && hours < 16){
+document.write ('<body style="background-color: #ADD8E6">');
 }
-//18 night
-else if (hours > 17 && hours < 19){
-document.write ('<body style="background-color: #C9AB93">');
+
+else if (hours > 15){
+document.write ('<body style="background-color: #FFA500">');
 }
-//19-4 night
-else if (hours > 18 || hours < 5){
-document.write ('<body style="background-color: #C0C0C0;">');
-}
-//9-16 day
-else if (hours > 8 && hours < 17){
-document.write ('<body style="background-color: #D6DEE4">');
-}
-//6-8 day
-else if (hours > 5 && hours < 9){
-document.write ('<body style="background-color: skyblue">');}
-//4-5 day
-else if (hours > 3 && hours < 6){
-document.write ('<body style="background-color: steelblue">');
+
+else if (hours < 8){
+document.write ('<body style="background-color: #808080">');
 }
 else {
 document.write ('<body style="background-color: white">');
@@ -161,30 +150,29 @@ var day=new Date().getDay();
 switch (day)
 {
 case 0:
-  x="<h1>Shifts in this day (Sunday) </h1><h3>[00-08] Hayyan Mosallam + Mohammad Shukri <br>[08-16] Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24] Bader Kayed + Mohammad Haj Ali + Ahmad Odeh</h3>";
+  x="<h1>Shifts in this day (Sunday) </h1><h3>[ 00-08 | Night &#9790 ]<br> Hayyan Mosallam + Mohammad Shukri <br><br>[ 08-16 | Morning ]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br><br>[ 16-24 | Evening ]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh</h3>";
   break;
 case 1:
-  x="<h1>Shifts in this day (Monday) </h1><h3>[00-08] Bader Kayed + Mohammad Haj Ali <br>[08-16] Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24] Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq</h3>";
+  x="<h1>Shifts in this day (Monday) </h1><h3>[ 00-08 | Night &#9790 ]<br> Bader Kayed + Mohammad Haj Ali <br><br>[ 08-16 | Morning ]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br><br>[ 16-24 | Evening ]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq</h3>";
   break;
 case 2:
-  x="<h1>Shifts in this day (Tuesday) </h1><h3>[00-08] Mohammad Ghanem + Haytham Sadeq <br>[08-16] Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24] Ali Batanjeh + Hayyan Mosallam</h3>";
+  x="<h1>Shifts in this day (Tuesday) </h1><h3>[ 00-08 | Night &#9790 ]<br> Mohammad Ghanem + Haytham Sadeq <br><br>[ 08-16 | Morning ]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br><br>[ 16-24 | Evening ]<br> Ali Batanjeh + Hayyan Mosallam</h3>";
   break;
 case 3:
-  x="<h1>Shifts in this day (Wednesday) </h1><h3>[00-08] Ali Batanjeh + Hayyan Mosallam <br>[08-16] Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24] Mu'een Dado' + Bader Kayed</h3>";
+  x="<h1>Shifts in this day (Wednesday) </h1><h3>[ 00-08 | Night &#9790 ]<br> Ali Batanjeh + Hayyan Mosallam <br><br>[ 08-16 | Morning ]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br><br>[ 16-24 | Evening ]<br> Mu'een Dado' + Bader Kayed</h3>";
   break;
 case 4:
-  x="<h1>Shifts in this day (Thursday) </h1><h3>[00-08] Mu'een Dado' + Bader Kayed <br>[08-16] Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24] Mohammad Ghanem + Mohammad Al Asmar</h3>";
+  x="<h1>Shifts in this day (Thursday) </h1><h3>[ 00-08 | Night &#9790 ]<br> Mu'een Dado' + Bader Kayed <br><br>[ 08-16 | Morning  ]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br><br>[ 16-24 | Evening ]<br> Mohammad Ghanem + Mohammad Al Asmar</h3>";
   break;
 case 5:
-  x="<h1>Shifts in this day (Friday) </h1><h3>[00-08] Mohammad Ghanem + Mohammad Al Asmar <br>[08-16] Ahmad Odeh + Mohammad Shukri <br>[16-24] Ali Batanjeh + Mohammad Haj Ali</h3>";
+  x="<h1>Shifts in this day (Friday) </h1><h3>[ 00-08 | Night &#9790 ]<br> Mohammad Ghanem + Mohammad Al Asmar <br><br>[ 08-16 | Morning ]<br> Ahmad Odeh + Mohammad Shukri <br><br>[ 16-24 | Evening ]<br>Ali Batanjeh + Mohammad Haj Ali</h3>";
   break;
 case 6:
-  x="<h1>Shifts in this day (Saturday) </h1><h3>[00-08] Ali Batanjeh + Mohammad Haj Ali <br>[08-16] Ahmad Odeh + Haytham Sadeq <br>[16-24] Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri</h3>";
+  x="<h1>Shifts in this day (Saturday) </h1><h3>[ 00-08 | Night &#9790 ]<br> Ali Batanjeh + Mohammad Haj Ali <br><br>[ 08-16 | Morning ]<br> Ahmad Odeh + Haytham Sadeq <br><br>[ 16-24 | Evening ]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri</h3>";
   break;
 }
 document.write(x);
 </script>
-
 </script>
 
 <hr>
@@ -202,6 +190,25 @@ document.write(x);
 <b>Thursday </b><br>[00-08] Mu'een Dado' + Bader Kayed <br>[08-16] Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24] Mohammad Ghanem + Mohammad Al Asmar
 <br><br>
 <b>Friday </b><br>[00-08] Mohammad Ghanem + Mohammad Al Asmar <br>[08-16] Ahmad Odeh + Mohammad Shukri <br>[16-24] Ali Batanjeh + Mohammad Haj Ali
+
+<br><br>
+<hr>
+
+<h2>Shifts/Employees distribution :</h2>
+
+<b>3 Morning - 1 Evening -1 Night :</b>
+<br>
+Mu'een | Haytham | M.Shukri | M.AlAsmar</b>
+<br><br>
+<b>1 Morning- 2 Evening- 2 Night :</b>
+<br>
+Ali | M.HajAli | Hayyan | Bader
+<br><br>
+<b>3 Evening -2 Night : </b>M.Ghanem <br><br>
+<b>3 Morning -2 Evening :</b> Ahmad Odeh
+
+
+
 </body>
 </html>
 <!-- Hosting24 Analytics Code -->

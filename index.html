@@ -19,7 +19,7 @@ document.write ('<h1><font color="#ADD8E6">Previous Shift:</font></h1>');
 }
 
 else if (hours < 8){
-document.write ('<h1><font color="orange">Previous Shift:</font></h1>');
+document.write ('<h1><font color="#B69250">Previous Shift:</font></h1>');
 }
 else {
 document.write ('<body style="background-color: white">');
@@ -252,7 +252,7 @@ document.bgColor="#CC9900";
 
 
 if (hours > 7 && hours < 16){
-document.write ('<h1><font color="orange">Next Shift:</font></h1>');
+document.write ('<h1><font color="#B69250">Next Shift:</font></h1>');
 }
 
 else if (hours > 15){
@@ -377,11 +377,11 @@ document.write ('<body style="background-color: #ADD8E6">');
 }
 
 else if (hours > 15){
-document.write ('<body style= "background-color: #CC6600">');
+document.write ('<body style= "background-color: B69250">');
 }
 
 else if (hours < 8){
-document.write ('<body style="background-color: #808080">');
+document.write ('<body style="background-color: 808080">');
 }
 else {
 document.write ('<body style="background-color: white">');
@@ -406,29 +406,182 @@ left:30px;}
   
 </style>
 
+<bodybackground="text71124191.jpg" >
+</body>
 
+
+<script type="text/javascript">
+
+var now = new Date();
+var hour = now.getHours();
+var day = now.getDay();
+var f = "Friday";
+var s = "Saturday"
+var su = "Sunday"
+var m = "Monday"
+var tu = " Tuesday"
+var w = "Wednesday"
+var th = "Thursday"
+var t1 = "[00-08]";
+var t2 = "[08-16]";
+var t3 = "[16-24]"
+var f22 = "Ahmad Odeh  +  Mohammad Shukri <br>[16-24]<br> Ali Batanjeh  +  Mohammad Haj Ali"
+var mm2 = "<br>[00-08]<br> Mohammad Ghanem  +  Mohammad Al Asmar"
+var f1 = "<hr><h1> Weekly schedule </h1><b>Saturday </b><br>[00-08]<br> Ali Batanjeh  +  Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh  +  Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem  +  Hayyan Mosallam  +  Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam  +  Mohammad Shukri <br>[08-16]<br> Mu'een Dado'  +  Ali Batanjeh  +  Haytham Sadeq <br>[16-24]<br> Bader Kayed  +  Mohammad Haj Ali  +  Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed  +  Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado'  +  Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem  +  Ahmad Odeh  +  Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem  +  Haytham Sadeq <br>[08-16]<br> Mu'een Dado'  +  Bader Kayed  +  Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh  +  Hayyan Mosallam<br>[08-16]<br> Mohammad Shukri  +  Mohammad Al Asmar  +  Haytham Sadeq <br>[16-24]<br> Mu'een Dado'  +  Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'  +  Bader Kayed <br>[08-16]<br> Ahmad Odeh  +  Mohammad Shukri  +  Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem  +  Mohammad Al Asmar<br>"
+var f2 = "Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh  +  Mohammad Shukri <br>[16-24]<br> Ali Batanjeh  +  Mohammad Haj Ali"
+
+
+var f11 = "<hr><h1> Weekly schedule </h1><b>Saturday </b><br>[00-08]<br> Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>"
+var f33 = "[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri"
+var aa = "Ali Batanjeh + Mohammad Haj Ali"
+
+var s1 = "<hr><h1> Weekly schedule </h1>"
+var s2 = "Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+
+var s11 = "[00-08]<br> Ali Batanjeh + Mohammad Haj Ali"
+var s22 = "Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var s111 = "[00-08]<br> Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq"
+var s222 = "Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+
+var su1 = "<hr><h1> Weekly schedule </h1><b>Saturday </b><br>[00-08]<br> Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br>"
+
+var su2 = "Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var su22 = "Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+var su21 = "[00-08]<br> Hayyan Mosallam + Mohammad Shukri"
+
+var su3 = "[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq"
+var su4 = "Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var m1 = "<hr><h1> Weekly schedule </h1><b>Saturday </b><br>[00-08]<br> Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br>"
+var m2 = "Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var mm1 = "[00-08]<br> Bader Kayed + Mohammad Haj Ali"
+var mm2 = "Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var mm3 = "[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar"
+var mm4 = "Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var tu1 = "<hr><h1> Weekly schedule </h1><b>Saturday </b><br>[00-08]<br> Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br>"
+var tu2 = "Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var tu11 = "[00-08]<br> Mohammad Ghanem + Haytham Sadeq"
+var tu22 = "Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var w1 = "<hr><h1> Weekly schedule </h1><b>Saturday </b><br>[00-08]<br> Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br>"
+var w2 = "Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var w3 = "[00-08]<br> Ali Batanjeh + Hayyan Mosallam"
+var w4 = "Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var w5 = "[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq"
+var w6 = "Mu'een Dado' + Bader Kayed<br><br><b>Thursday </b><br>[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var th1 = "<hr><h1> Weekly schedule </h1><b>Saturday </b><br>[00-08]<br> Ali Batanjeh + Mohammad Haj Ali<br>[08-16]<br> Ahmad Odeh + Haytham Sadeq <br>[16-24]<br> Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri<br><br><b>Sunday </b><br>[00-08]<br> Hayyan Mosallam + Mohammad Shukri <br>[08-16]<br> Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24]<br> Bader Kayed + Mohammad Haj Ali + Ahmad Odeh<br><br><b>Monday </b><br>[00-08]<br> Bader Kayed + Mohammad Haj Ali <br>[08-16]<br> Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24]<br> Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq<br><br><b>Tuesday </b><br>[00-08]<br> Mohammad Ghanem + Haytham Sadeq <br>[08-16]<br> Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24]<br> Ali Batanjeh + Hayyan Mosallam<br><br><b>Wednesday </b><br>[00-08]<br> Ali Batanjeh + Hayyan Mosallam <br>[08-16]<br> Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24]<br> Mu'een Dado' + Bader Kayed<br><br>"
+var th2 = "Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var th3 = "[00-08]<br> Mu'een Dado'+ Bader Kayed"
+var th4 = "Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24]<br> Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+var th5 = "[00-08]<br> Mu'een Dado'+ Bader Kayed <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali"
+var th6 = "Mohammad Ghanem + Mohammad Al Asmar<br><br><b>Friday </b><br>[00-08]<br> Mohammad Ghanem + Mohammad Al Asmar <br>[08-16]<br> Ahmad Odeh + Mohammad Shukri <br>[16-24]<br> Ali Batanjeh + Mohammad Haj Ali"
+
+
+
+
+
+
+
+     if (day == 0 && hour < 8 ) { 
+    document.write("" + su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + su2.fontcolor("black") + ""); 
+}
+
+else if (day == 0 && hour > 7 && hour < 16 ) { 
+    document.write("" + su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + su21.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + su22.fontcolor("black") + ""); 
+}
+
+else if (day == 0 && hour > 15 ) { 
+    document.write("" + su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + su3.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + su4.fontcolor("black") + "");
+}
+
+else if (day == 1 && hour < 8 ) { 
+    document.write("" + m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + m2.fontcolor("black") + ""); 
+}
+
+else if (day == 1 && hour > 7 && hour < 16 ) { 
+    document.write("" + m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + mm1.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + mm2.fontcolor("black") + ""); 
+}
+
+else if (day == 1 && hour > 15 ) { 
+    document.write("" + m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + mm3.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + mm4.fontcolor("black") + ""); 
+}
+
+else if (day == 2 && hour < 8 ) { 
+    document.write("" + tu1.fontcolor("black") + "") & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + tu2.fontcolor("black") + ""); 
+}
+
+else if (day == 2 && hour > 7 && hour < 16 ) { 
+    document.write("" + tu1.fontcolor("black") + "") & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + tu11.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + tu22.fontcolor("black") + ""); 
+}
+
+else if (day == 2 && hour > 15 ) { 
+    document.write("" + m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + mm3.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + mm4.fontcolor("black") + ""); 
+}
+
+else if (day == 3 && hour < 8 ) { 
+    document.write("" + w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + w2.fontcolor("black") + ""); 
+}
+
+else if (day == 3 && hour > 7 && hour < 16 ) { 
+    document.write("" + w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + w3.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + w4.fontcolor("black") + ""); 
+}
+
+else if (day == 3 && hour > 15 ) { 
+    document.write("" + w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + w5.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + w6.fontcolor("black") + "");  
+}
+
+else if (day == 4 && hour < 8 ) { 
+    document.write("" + th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + th2.fontcolor("black") + "");
+}
+
+else if (day == 4 && hour > 7 && hour < 16 ) { 
+    document.write("" + th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + th3.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + th4.fontcolor("black") + "");
+}
+
+else if (day == 4 && hour > 15 ) { 
+    document.write("" + th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + th5.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + th6.fontcolor("black") + ""); 
+}
+
+else if (day == 5 && hour < 8 ) { 
+    document.write("" + f1.fontcolor("black") + "") & document.write("<b><br>" + f.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + f2.fontcolor("black") + "");
+}
+
+else if (day == 5 && hour > 7 && hour < 16 ) { 
+    document.write("" + f1.fontcolor("black") + "") & document.write("<b><br>" + f.fontcolor("red") + "</b>") & document.write("<br>" + mm2.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + f22.fontcolor("black") + "");
+}
+
+else if (day == 5 && hour > 15 ) { 
+    document.write("" + f11.fontcolor("black") + "") & document.write("<b>" + f.fontcolor("red") + "</b>") & document.write("<br>" + f33.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + aa.fontcolor("black") + ""); 
+}
+
+else if (day == 6 && hour < 8 ) { 
+    document.write("" + s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + s2.fontcolor("black") + "");
+}
+
+else if (day == 6 && hour > 7 && hour < 16) { 
+    document.write("" + s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + s11.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + s22.fontcolor("black") + ""); 
+}
+
+else if (day == 6 && hour > 15 ) { 
+    document.write("" + s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + s111.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + s222.fontcolor("black") + ""); 
+}
+</script>
 
 
 <hr>
-<h1> Weekly schedule </h1>
-<b>Saturday </b><br>[00-08] Ali Batanjeh + Mohammad Haj Ali<br>[08-16] Ahmad Odeh + Haytham Sadeq <br>[16-24] Mohammad Ghanem + Hayyan Mosallam + Mohammad Shukri
-<br><br>
-<b>Sunday </b><br>[00-08] Hayyan Mosallam + Mohammad Shukri <br>[08-16] Mu'een Dado' + Ali Batanjeh + Haytham Sadeq <br>[16-24] Bader Kayed + Mohammad Haj Ali + Ahmad Odeh
-<br><br>
-<b>Monday </b><br>[00-08] Bader Kayed + Mohammad Haj Ali <br>[08-16] Hayyan Mosallam + Mu'een Dado' + Mohammad Al Asmar <br>[16-24] Mohammad Ghanem + Ahmad Odeh + Haytham Sadeq
-<br><br>
-<b>Tuesday </b><br>[00-08] Mohammad Ghanem + Haytham Sadeq <br>[08-16] Mu'een Dado' + Bader Kayed + Mohammad Al Asmar <br>[16-24] Ali Batanjeh + Hayyan Mosallam
-<br><br>
-<b>Wednesday </b><br>[00-08] Ali Batanjeh + Hayyan Mosallam <br>[08-16] Mohammad Shukri + Mohammad Al Asmar + Haytham Sadeq <br>[16-24] Mu'een Dado' + Bader Kayed
-<br><br>
-<b>Thursday </b><br>[00-08] Mu'een Dado' + Bader Kayed <br>[08-16] Ahmad Odeh + Mohammad Shukri + Mohammad Haj Ali <br>[16-24] Mohammad Ghanem + Mohammad Al Asmar
-<br><br>
-<b>Friday </b><br>[00-08] Mohammad Ghanem + Mohammad Al Asmar <br>[08-16] Ahmad Odeh + Mohammad Shukri <br>[16-24] Ali Batanjeh + Mohammad Haj Ali
-
-<br><br>
-<hr>
-
-
 
 <p style="text-align: center;">
 ali.batanjeh@jawwal.ps

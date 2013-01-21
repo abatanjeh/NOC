@@ -1,4 +1,21 @@
 
+<html>
+<head>
+<title>NOC Schedule
+</title>
+<style type="text/css">
+  body  
+{font-family: Arial,
+          Times, serif;
+    color: black;
+	    background-color: #ddffdd 
+left:30px;}
+  h1 {
+    font-family: Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif }
+  
+</style>
+
 
 
 
@@ -7,19 +24,19 @@ var now = new Date();
 var hours = now.getHours();
 
 
-document.bgColor="#CC9900";
+
 
 
 if (hours > 7 && hours < 16){
-document.write ('<h1><font color="gray">Previous Shift:</font></h1>');
+document.write ('<h1><font color="#2E2E2E">Previous Shift:</font></h1>');
 }
 
 else if (hours > 15){
-document.write ('<h1><font color="#847CF5">Previous Shift:</font></h1>');
+document.write ('<h1><font color="#2E2E2E">Previous Shift:</font></h1>');
 }
 
 else if (hours < 8){
-document.write ('<h1><font color="#C9F164">Previous Shift:</font></h1>');
+document.write ('<h1><font color="#2E2E2E">Previous Shift:</font></h1>');
 }
 else {
 document.write ('<body style="background-color: white">');
@@ -158,89 +175,90 @@ var day = now.getDay();
 
 
      if (day == 0 && hour < 8 ) { 
-    document.write("<h3><b>Night | 00-08</b><br>Haytham Sadeq + Mohammad Ghanem </h3>");
+    document.write("<h3><b>Night | 00-08</b><br>Haytham Sadeq : 0599000666 <br>  Mohammad Ghanem : 0599000145 </h3>");
 }
 
 else if (day == 0 && hour > 7 && hour < 16 ) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Bader Kayed + Mohammad Alasmar + Hayyan Mosalam </h3>");
+    document.write("<h3><b>Morning | 08-16</b><br>Bader Kayed : 0599000668 <br>  Mohammad Alasmar : 0599000179 <br>  Hayyan Mosalam : 0599001047 </h3>");
 }
 
 else if (day == 0 && hour > 15 ) { 
-    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Haj Ali + Ahmad Odeh + Mohammad Shukri </h3>");
+    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Haj Ali : 0599001046 <br>  Ahmad Odeh : 0599000672 <br>  Mohammad Shukri : 0599000671 </h3>");
 }
 
 else if (day == 1 && hour < 8 ) { 
-    document.write("<h3><b>Night | 00-08</b><br>Mohammad Haj Ali + Mohammad Ghanem </h3>");
+    document.write("<h3><b>Night | 00-08</b><br>Mohammad Haj Ali : 0599001046 <br>  Mohammad Ghanem : 0599000145 </h3>");
 }
 
 else if (day == 1 && hour > 7 && hour < 16 ) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Haytham Sadeq + Mu'een Dado' + Ahmad Odeh </h3>");
+    document.write("<h3><b>Morning | 08-16</b><br>Haytham Sadeq : 0599000666 <br>  Mu'een Dado'i : 0599001098 <br>  Ahmad Odeh : 0599000672 </h3>");
 }
 
 else if (day == 1 && hour > 15 ) { 
-    document.write("<h3><b>Evening | 16-24</b><br>Bader Kayed + Mohammad Alasmar + Hayyan Mosalam </h3>");
+    document.write("<h3><b>Evening | 16-24</b><br>Bader Kayed : 0599000668 <br>  Mohammad Alasmar : 0599000179 <br>  Hayyan Mosalam : 0599001047 </h3>");
 }
 
 else if (day == 2 && hour < 8 ) { 
-    document.write("<h3><b>Night | 00-08</b><br>Mohammad Shukri + Mohammad Alasmar + Hayyan Mosalam </h3>");
+    document.write("<h3><b>Night | 00-08</b><br>Mohammad Shukri : 0599000671 <br>  Mohammad Alasmar : 0599000179 <br>  Hayyan Mosalam : 0599001047 </h3>");
 }
 
 else if (day == 2 && hour > 7 && hour < 16 ) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Ali Batanjeh + Mu'een Dado' </h3>");
+    document.write("<h3><b>Morning | 08-16</b><br>Ali Batanjeh : 0599000399 <br>  Mu'een Dado'i : 0599001098 </h3>");
 }
 
 else if (day == 2 && hour > 15 ) { 
-    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Shukri + Haytham Sadeq </h3>");
+    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Shukri : 0599000671 <br>  Haytham Sadeq : 0599000666 </h3>");
 }
 
 else if (day == 3 && hour < 8 ) { 
-    document.write("<h3><b>Night | 00-08</b><br>Bader Kayed + Haytham Sadeq </h3>");
+    document.write("<h3><b>Night | 00-08</b><br>Bader Kayed : 0599000668 <br>  Haytham Sadeq : 0599000666 </h3>");
 }
 
 else if (day == 3 && hour > 7 && hour < 16 ) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Mohammad Shukri + Ali Batanjeh </h3>");
+    document.write("<h3><b>Morning | 08-16</b><br>Mohammad Shukri : 0599000671 <br>  Ali Batanjeh : 0599000399 </h3>");
 }
 
 else if (day == 3 && hour > 15 ) { 
-    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Ghanem + Mu'een Dado' + Mohammad Haj Ali </h3>");
+    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Ghanem : 0599000145 <br>  Mu'een Dado'i : 0599001098 <br>  Mohammad Haj Ali : 0599001046 </h3>");
 }
 
 else if (day == 4 && hour < 8 ) { 
-    document.write("<h3><b>Night | 00-08</b><br>Mu'een Dado' + Mohammad Haj Ali </h3>");
+    document.write("<h3><b>Night | 00-08</b><br>Mu'een Dado'i : 0599001098 <br>  Mohammad Haj Ali : 0599001046 </h3>");
 }
 
 else if (day == 4 && hour > 7 && hour < 16 ) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Bader Kayed + Mohammad Shukri + Ahmad Odeh </h3>");
+    document.write("<h3><b>Morning | 08-16</b><br>Bader Kayed : 0599000668 <br>  Mohammad Shukri : 0599000671 <br>  Ahmad Odeh : 0599000672 </h3>");
 }
 
 else if (day == 4 && hour > 15 ) { 
-    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Ghanem + Ali Batanjeh </h3>");
+    document.write("<h3><b>Evening | 16-24</b><br>Mohammad Ghanem : 0599000145 <br>  Ali Batanjeh : 0599000399 </h3>");
 }
 
 else if (day == 5 && hour < 8 ) { 
-    document.write("<h3><b>Night | 00-08</b><br>Mohammad Ghanem + Mohammad Haj Ali </h3>");
+    document.write("<h3><b>Night | 00-08</b><br>Mohammad Ghanem : 0599000145 <br>  Mohammad Haj Ali : 0599001046 </h3>");
 }
 
 else if (day == 5 && hour > 7 && hour < 16 ) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Mohammad Alasmar + Ahmad Odeh </h3>");
+    document.write("<h3><b>Morning | 08-16</b><br>Mohammad Alasmar : 0599000179 <br>  Ahmad Odeh : 0599000672 </h3>");
 }
 
 else if (day == 5 && hour > 15 ) { 
-    document.write("<h3><b>Evening | 16-24</b><br>Hayyan Mosalam + Ali Batanjeh </h3>");
+    document.write("<h3><b>Evening | 16-24</b><br>Hayyan Mosalam : 0599001047 <br>  Ali Batanjeh : 0599000399 </h3>");
 }
 
 else if (day == 6 && hour < 8 ) { 
-    document.write("<h3><b>Night | 00-08</b><br>Hayyan Mosalam + Ali Batanjeh </h3>");
+    document.write("<h3><b>Night | 00-08</b><br>Hayyan Mosalam : 0599001047 <br>  Ali Batanjeh : 0599000399 </h3>");
 }
 
 else if (day == 6 && hour > 7 && hour < 16) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Bader Kayed + Mohammad Alasmar + Mu'een Dado' </h3>");
+    document.write("<h3><b>Morning | 08-16</b><br>Bader Kayed : 0599000668 <br>  Mohammad Alasmar : 0599000179 <br>  Mu'een Dado'i : 0599001098 </h3>");
 }
 
 else if (day == 6 && hour > 15 ) { 
-    document.write("<h3><b>Evening | 16-24</b><br>Haytham Sadeq + Ahmad Odeh </h3>");
+    document.write("<h3><b>Evening | 16-24</b><br>Haytham Sadeq : 0599000666 <br>  Ahmad Odeh : 0599000672 </h3>");
 }
 </script>
+
 
 
 <script type="text/javascript">
@@ -248,25 +266,24 @@ var now = new Date();
 var hours = now.getHours();
 
 
-document.bgColor="#CC9900";
+
 
 
 if (hours > 7 && hours < 16){
-document.write ('<h1><font color="#C9F164">Next Shift:</font></h1>');
+document.write ('<h1><font color="#2E2E2E">Next Shift:</font></h1>');
 }
 
 else if (hours > 15){
-document.write ('<h1><font color="gray">Next Shift:</font></h1>');
+document.write ('<h1><font color="#2E2E2E">Next Shift:</font></h1>');
 }
 
 else if (hours < 8){
-document.write ('<h1><font color="#847CF5">Next Shift:</font></h1>');
+document.write ('<h1><font color="#2E2E2E">Next Shift:</font></h1>');
 }
 else {
 document.write ('<body style="background-color: white">');
 }
-</script>	
-
+</script>
 <script type="text/javascript">
 
 var now = new Date();
@@ -363,38 +380,14 @@ else if (day == 6 && hour > 15 ) {
 	
 
 
-<html>
-<head>
-<title>NOC Schedule
-</title>
-<style type="text/css">
-  body  
-{font-family: Arial,
-          Times, serif;
-    color: black;
-	    background-color: #ddffdd 
-left:30px;}
-  h1 {
-    font-family: Helvetica, Geneva, Arial,
-          SunSans-Regular, sans-serif }
-  
-</style>
 
-<bodybackground="pattern_152.gif" >
 
-<html>
-<head>
-    <title></title>
-</head>
-<body>
-
-</body>
 <script type="text/javascript">
 var now = new Date();
 var hours = now.getHours();
 
 
-document.bgColor="#CC9900";
+
 
 
 if (hours > 7 && hours < 16){
@@ -406,7 +399,7 @@ else if (hours > 15){
 }
 
 else if (hours < 8){
-document.body.background = "night.gif";
+document.body.background = "night.jpg";
 }
 else {
 document.write ('<body style="background-color: white">');
@@ -593,7 +586,15 @@ else if (day == 6 && hour > 15 ) {
 <hr>
 
 <p style="text-align: center;">
-ali.batanjeh@jawwal.ps
+Iyad Amro : 0599000025
+<br>
+Ammar Salah : 0599000307
+</p>
+
+<hr>
+
+<p style="text-align: center;">
+Ali.Batanjeh@jawwal.ps
 </p>
 
 </body>

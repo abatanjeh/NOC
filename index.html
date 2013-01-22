@@ -7,21 +7,19 @@
   body  
 {font-family: Arial,
           Times, serif;
-    color: black;
-	    background-color: #ddffdd 
-left:30px;}
-  h1 {
+
     font-family: Helvetica, Geneva, Arial,
           SunSans-Regular, sans-serif }
-  
+
 </style>
+
 
 	  
 
 
 
 
-<script type="text/javascript">
+<script type="text/javascript" >
 var now = new Date();
 var hours = now.getHours();
 
@@ -44,6 +42,9 @@ else {
 document.write ('<body style="background-color: white">');
 }
 </script>	
+<style type="text/css">
+h1 {text-align: center}
+</style>
 
 <script type="text/javascript">
 
@@ -138,9 +139,10 @@ else if (day == 6 && hour > 15 ) {
 }
 </script>
 
+
 <script language="JavaScript"> 
 var Color1 = "#000000"
-var Color2 = "#5FB404"
+var Color2 = "#173B0B"
 
 var blinkRate= 700;
 bV  = parseInt(navigator.appVersion)
@@ -164,23 +166,25 @@ function blinkLink(){
 
 </script>
 <h1><a id="BlinkLink">Runing Shift 
+
 <script type="text/javascript">
  blinkLink();
 </script>
 
-	  	  <canvas id="clock" width="60" height="60">
+
+</a></h1>
+
+
+<center>.<canvas id="clock" width="70" height="70">
   Your browser is unfortunately not supported.
 </canvas>
 
 
-    <title>Bahnhofsuhr</title>
-    
-      <!--[if IE]>
-        <script type="text/javascript" src="excanvas.js"></script>
-      <![endif]-->
+  
+     <script type="text/javascript" src="station-clock.js"></script>
+        <script type="text/javascript">
 
-      <script type="text/javascript" src="station-clock.js"></script>
-      <script type="text/javascript">
+
 
       var clock = new StationClock("clock");
       clock.body = StationClock.RoundBody;
@@ -201,8 +205,15 @@ function blinkLink(){
 
 
 </script>
-</a></h1>
-<script type="text/javascript">
+</center>
+
+
+
+</style>
+	  	  
+
+
+<script type="text/javascript" >
 
 var now = new Date();
 var hour = now.getHours();
@@ -210,7 +221,7 @@ var day = now.getDay();
 
 
 
-     if (day == 0 && hour < 8 ) { 
+          if (day == 0 && hour < 8 ) { 
     document.write("<h3><b>Night | 00-08</b><br>Haytham Sadeq : 0599000666 <br>  Mohammad Ghanem : 0599000145 </h3>");
 }
 
@@ -239,7 +250,7 @@ else if (day == 2 && hour < 8 ) {
 }
 
 else if (day == 2 && hour > 7 && hour < 16 ) { 
-    document.write("<h3><b>Morning | 08-16</b><br>Ali Batanjeh : 0599000399 <br>  Mu'een Dado'i : 0599001098 <br> Bader Kayed : 0599000668</h3>");
+    document.write("<h3>Morning | 08-16</b><br>Ali Batanjeh : 0599000399 <br>  Mu'een Dado'i : 0599001098 <br> Bader Kayed : 0599000668</h3>");
 }
 
 else if (day == 2 && hour > 15 ) { 
@@ -294,7 +305,9 @@ else if (day == 6 && hour > 15 ) {
     document.write("<h3><b>Evening | 16-24</b><br>Haytham Sadeq : 0599000666 <br>  Ahmad Odeh : 0599000672 </h3>");
 }
 </script>
-
+<style type="text/css">
+h3 {text-align: center}
+</style>
 
 
 <script type="text/javascript">
@@ -412,7 +425,9 @@ else if (day == 6 && hour > 15 ) {
     document.write("<h3><b>Night | 00-08</b><br>Haytham Sadeq + Mohammad Ghanem <br> </h3>");
 }
 </script>
-
+<style type="text/css">
+h3 {text-align: center}
+</style>
 	
 
 
@@ -532,93 +547,95 @@ var th6 = "Mohammad Ghanem + Ali Batanjeh<br><br><b>Friday</b><br>[00-08]<br> Mo
 
 
 
-
+   document.write('<center>');
+   
      if (day == 0 && hour < 8 ) { 
-    document.write("" + su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + su2.fontcolor("black") + ""); 
+    document.write( su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + su2.fontcolor("black") + ""); 
 }
 
 else if (day == 0 && hour > 7 && hour < 16 ) { 
-    document.write("" + su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + su21.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + su22.fontcolor("black") + ""); 
+    document.write( su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + su21.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + su22.fontcolor("black") + ""); 
 }
 
 else if (day == 0 && hour > 15 ) { 
-    document.write("" + su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + su3.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + su4.fontcolor("black") + "");
+    document.write( su1.fontcolor("black") + "") & document.write("<b>" + su.fontcolor("red") + "</b>") & document.write("<br>" + su3.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + su4.fontcolor("black") + "");
 }
 
 else if (day == 1 && hour < 8 ) { 
-    document.write("" + m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + m2.fontcolor("black") + ""); 
+    document.write( m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + m2.fontcolor("black") + ""); 
 }
 
 else if (day == 1 && hour > 7 && hour < 16 ) { 
-    document.write("" + m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + mm1.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + mm2.fontcolor("black") + ""); 
+    document.write( m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + mm1.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + mm2.fontcolor("black") + ""); 
 }
 
 else if (day == 1 && hour > 15 ) { 
-    document.write("" + m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + mm3.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + mm4.fontcolor("black") + ""); 
+    document.write( m1.fontcolor("black") + "") & document.write("<b>" + m.fontcolor("red") + "</b>") & document.write("<br>" + mm3.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + mm4.fontcolor("black") + ""); 
 }
 
 else if (day == 2 && hour < 8 ) { 
-    document.write("" + tu1.fontcolor("black") + "") & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + tu2.fontcolor("black") + ""); 
+    document.write( tu1.fontcolor("black") + "") & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + tu2.fontcolor("black") + ""); 
 }
 
 else if (day == 2 && hour > 7 && hour < 16 ) { 
-    document.write("" + tu1.fontcolor("black") + "") & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + tu11.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + tu22.fontcolor("black") + ""); 
+    document.write(tu1.fontcolor("black")) & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + tu11.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + tu22.fontcolor("black") + ""); 
 }
 
 else if (day == 2 && hour > 15 ) { 
-    document.write("" + tu1.fontcolor("black") + "") & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + tu4.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + tu5.fontcolor("black") + ""); 
+    document.write( tu1.fontcolor("black") + "") & document.write("<b>" + tu.fontcolor("red") + "</b>") & document.write("<br>" + tu4.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + tu5.fontcolor("black") + ""); 
 }
 
 else if (day == 3 && hour < 8 ) { 
-    document.write("" + w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + w2.fontcolor("black") + ""); 
+    document.write( w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + w2.fontcolor("black") + ""); 
 }
 
 else if (day == 3 && hour > 7 && hour < 16 ) { 
-    document.write("" + w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + w3.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + w4.fontcolor("black") + ""); 
+    document.write( w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + w3.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + w4.fontcolor("black") + ""); 
 }
 
 else if (day == 3 && hour > 15 ) { 
-    document.write("" + w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + w5.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + w6.fontcolor("black") + "");  
+    document.write( w1.fontcolor("black") + "") & document.write("<b>" + w.fontcolor("red") + "</b>") & document.write("<br>" + w5.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + w6.fontcolor("black") + "");  
 }
 
 else if (day == 4 && hour < 8 ) { 
-    document.write("" + th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + th2.fontcolor("black") + "");
+    document.write( th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + th2.fontcolor("black") + "");
 }
 
 else if (day == 4 && hour > 7 && hour < 16 ) { 
-    document.write("" + th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + th3.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + th4.fontcolor("black") + "");
+    document.write( th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + th3.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + th4.fontcolor("black") + "");
 }
 
 else if (day == 4 && hour > 15 ) { 
-    document.write("" + th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + th5.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + th6.fontcolor("black") + ""); 
+    document.write( th1.fontcolor("black") + "") & document.write("<b>" + th.fontcolor("red") + "</b>") & document.write("<br>" + th5.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + th6.fontcolor("black") + ""); 
 }
 
 else if (day == 5 && hour < 8 ) { 
-    document.write("" + f1.fontcolor("black") + "") & document.write("<b>" + f.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + f2.fontcolor("black") + "");
+    document.write( f1.fontcolor("black") + "") & document.write("<b>" + f.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + f2.fontcolor("black") + "");
 }
 
 else if (day == 5 && hour > 7 && hour < 16 ) { 
-    document.write("" + f1.fontcolor("black") + "") & document.write("<b>" + f.fontcolor("red") + "</b>") & document.write("<br>" + mm22.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + f22.fontcolor("black") + "");
+    document.write( f1.fontcolor("black") + "") & document.write("<b>" + f.fontcolor("red") + "</b>") & document.write("<br>" + mm22.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + f22.fontcolor("black") + "");
 }
 
 else if (day == 5 && hour > 15 ) { 
-    document.write("" + f1.fontcolor("black") + "") & document.write("" + f.fontcolor("red") + "</b>") & document.write("<br>" + f33.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + aa.fontcolor("black") + ""); 
+    document.write( f1.fontcolor("black") + "") & document.write( f.fontcolor("red") + "</b>") & document.write("<br>" + f33.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + aa.fontcolor("black") + ""); 
 }
 
 else if (day == 6 && hour < 8 ) { 
-    document.write("" + s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + s2.fontcolor("black") + "");
+    document.write( s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + t1.fontcolor("red") + "") & document.write("<br>" + s2.fontcolor("black") + "");
 }
 
 else if (day == 6 && hour > 7 && hour < 16) { 
-    document.write("" + s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + s11.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + s22.fontcolor("black") + ""); 
+    document.write( s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + s11.fontcolor("black") + "") & document.write("<br>" + t2.fontcolor("red") + "") & document.write("<br>" + s22.fontcolor("black") + ""); 
 }
 
 else if (day == 6 && hour > 15 ) { 
-    document.write("" + s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + s111.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + s222.fontcolor("black") + ""); 
+    document.write( s1.fontcolor("black") + "") & document.write("<b>" + s.fontcolor("red") + "</b>") & document.write("<br>" + s111.fontcolor("black") + "") & document.write("<br>" + t3.fontcolor("red") + "") & document.write("<br>" + s222.fontcolor("black") + ""); 
 }
 </script>
-
-
+<style type="text/css">
+<h7> {text-align: center}
+</style>
 <hr>
 
 <p style="text-align: center;">
@@ -631,6 +648,8 @@ NOC Office : <br>
 Iyad Amro : 0599000025
 <br>
 Ammar Salah : 0599000307
+<br>
+<img src="jawwal.jpg">
 </p>
 
 <hr>
@@ -638,6 +657,8 @@ Ammar Salah : 0599000307
 <p style="text-align: center;">
 Ali.Batanjeh@jawwal.ps
 </p>
+
+
 
 </body>
 </html>
